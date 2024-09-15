@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    div{
+        font-family: "Readex Pro", sans-serif;
+    }
+}
+@layer components {
+    .card{
+        @apply
+        bg-white text-gray-700
+        w-72 min-h-[10rem]
+        shadow-lg rounded-md overflow-hidden
+    }
+    .badge{
+        @apply
+        px-3 py-1 rounded-full text-xs bg-gray-100
+    }
+    .product-title{
+        @apply
+        font-semibold text-2xl
+        overflow-ellipsis overflow-hidden whitespace-nowrap
+    }
+    .discount-percent{
+        @apply
+        bg-green-400
+        px-1.5 py-0.5 rounded-md
+        text-xs text-white
+    }
+    .button-primary{
+        @apply
+        bg-yellow-500/80 hover:bg-yellow-500/90
+        px-6 py-2 rounded-md
+        text-white font-medium
+        tracking-wider transition
+    }
+    .button-icon{
+        @apply
+        flex-grow
+        flex justify-center items-center
+        bg-gray-300/60 hover:bg-gray-300/80
+        transition rounded-md
+    }
+    .button-danger{
+        @apply
+        bg-red-500/80 hover:bg-red-500/90
+        px-6 py-2 rounded-md
+        text-white font-medium
+        tracking-wider transition
+    }
+    .button-gary{
+        @apply
+        bg-gray-500/80 hover:bg-gray-500/90
+        px-6 py-2 rounded-md
+        text-white font-medium
+        tracking-wider transition
+    }
+}

@@ -1,0 +1,237 @@
+<!-- 
+ <div class="h-screen bg-gray-100 flex items-center justify-center gap-10">
+<ng-container *ngFor="let dat of data">
+
+    <div class="card">
+        <img class="w-full h-full object-cover" src="../../assets/images/headphone.jpg" alt="Headphone">
+        <div class="p-5 flex flex-col gap-3">
+          <div  class="flex items-center gap-2">
+            <span class="badge">Stock ready</span>
+            <span class="badge">Official Store</span>
+          </div>
+          <h2 class="product-title" title="Headphone">{{dat.name}}</h2>
+          <div>
+            <span class="text-xl font-bold">
+              ${{dat.price}}
+            </span>
+            <div class="flex items-center gap-2 mt-1">
+              <span class="text-sm line-through opacity-50">
+                $120.00
+              </span>
+              <span class="discount-percent">
+                save 20%
+              </span>
+            </div>
+          </div>
+    
+          <span class="flex items-center mt-1">
+            <img src="../../assets/images/star.svg">
+            <img src="../../assets/images/star.svg">
+            <img src="../../assets/images/star.svg">
+            <img src="../../assets/images/star-half-fill.svg">
+            <img src="../../assets/images/star-no-fill.svg">
+            <span class="text-xs ml-2 text-gray-500">20K reviews</span>
+          </span>
+          <div class="mt-5 flex gap-2">
+            <button class="button-primary">Add to card</button>
+            <button class="button-icon">
+              <img class="opacity-50" src="../../assets/images/love.svg" alt="Add to whishlist">
+            </button>
+            <button class="button-icon"  (click)="navigate()">
+              <img class="opacity-50" src="../../assets/images/eye.svg" alt="Add to whishlist">
+            </button>
+          </div>
+        </div>
+      </div>
+</ng-container> 
+  <div class="card">
+    <img class="w-full h-full object-cover" src="../../assets/images/headphone.jpg" alt="Headphone">
+    <div class="p-5 flex flex-col gap-3">
+       Badge
+      <div  class="flex items-center gap-2">
+        <span class="badge">Stock ready</span>
+        <span class="badge">Official Store</span>
+      </div>
+       prod title 
+      <h2 class="product-title" title="Headphone">Headphone</h2>
+      prod price 
+      <div>
+        <span class="text-xl font-bold">
+          $100.00
+        </span>
+        <div class="flex items-center gap-2 mt-1">
+          <span class="text-sm line-through opacity-50">
+            $120.00
+          </span>
+          <span class="discount-percent">
+            save 20%
+          </span>
+        </div>
+      </div>
+
+      prod raiting 
+      <span class="flex items-center mt-1">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star-half-fill.svg">
+        <img src="../../assets/images/star-no-fill.svg">
+        <span class="text-xs ml-2 text-gray-500">20K reviews</span>
+      </span>
+      product action btn 
+      <div class="mt-5 flex gap-2">
+        <button class="button-primary">Add to card</button>
+        <button class="button-icon">
+          <img class="opacity-50" src="../../assets/images/love.svg" alt="Add to whishlist">
+        </button>
+        <button class="button-icon" > [routerLink]="'details'" (click)="navigate()" 
+          <img class="opacity-50" src="../../assets/images/eye.svg" alt="Add to whishlist">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="w-full h-full object-cover" src="../../assets/images/shoes.jpg" alt="shoes">
+    <div class="p-5 flex flex-col gap-3">
+      Badge
+      <div  class="flex items-center gap-2">
+        <span class="badge">Stock ready</span>
+        <span class="badge">Official Store</span>
+      </div>
+      prod title 
+      <h2 class="product-title" title="Shoes">Shoes</h2>
+      prod price 
+      <div>
+        <span class="text-xl font-bold">
+          $90.00
+        </span>
+        <div class="flex items-center gap-2 mt-1">
+          <span class="text-sm line-through opacity-50">
+            $115.00
+          </span>
+          <span class="discount-percent">
+            save 25%
+          </span>
+        </div>
+      </div>
+
+      prod raiting 
+      <span class="flex items-center mt-1">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star-half-fill.svg">
+        <img src="../../assets/images/star-no-fill.svg">
+        <span class="text-xs ml-2 text-gray-500">15K reviews</span>
+      </span>
+      product action btn 
+      <div class="mt-5 flex gap-2">
+        <button class="button-danger">Add to card</button>
+        <button class="button-icon">
+          <img class="opacity-50" src="../../assets/images/love.svg" alt="Add to whishlist">
+        </button>
+        <button class="button-icon">
+          <img class="opacity-50" src="../../assets/images/eye.svg" alt="Add to whishlist">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="w-full h-full object-cover" src="../../assets/images/camera.jpg" alt="camera">
+    <div class="p-5 flex flex-col gap-3">
+      Badge
+      <div  class="flex items-center gap-2">
+        <span class="badge">Stock ready</span>
+        <span class="badge">Official Store</span>
+      </div>
+      prod title 
+      <h2 class="product-title" title="camera">camera</h2>
+      prod price 
+      <div>
+        <span class="text-xl font-bold">
+          $90.00
+        </span>
+        <div class="flex items-center gap-2 mt-1">
+          <span class="text-sm line-through opacity-50">
+            $115.00
+          </span>
+          <span class="discount-percent">
+            save 25%
+          </span>
+        </div>
+      </div>
+
+      prod raiting 
+      <span class="flex items-center mt-1">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star.svg">
+        <img src="../../assets/images/star-half-fill.svg">
+        <img src="../../assets/images/star-no-fill.svg">
+        <span class="text-xs ml-2 text-gray-500">15K reviews</span>
+      </span>
+      product action btn 
+      <div class="mt-5 flex gap-2">
+        <button class="button-gary">Add to card</button>
+        <button class="button-icon">
+          <img class="opacity-50" src="../../assets/images/love.svg" alt="Add to whishlist">
+        </button>
+        <button class="button-icon">
+          <img class="opacity-50" src="../../assets/images/eye.svg" alt="Add to whishlist">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <app-pagination [totalItems]="data.length" [pageSize]="10" (pageChange)="onPageChange($event)"></app-pagination>
+</div>  -->
+<div class="h-screen bg-gray-100 pt-4 flex flex-wrap items-center justify-center gap-10">
+    <ng-container *ngFor="let dat of paginatedData">
+    
+        <div class="card">
+            <img class="w-full h-full object-cover" src="../../assets/images/headphone.jpg" alt="Headphone">
+            <div class="p-5 flex flex-col gap-3">
+              <div  class="flex items-center gap-2">
+                <span class="badge">Stock ready</span>
+                <span class="badge">Official Store</span>
+              </div>
+              <h2 class="product-title" title="Headphone">{{dat.name}}</h2>
+              <div>
+                <span class="text-xl font-bold">
+                  ${{dat.price}}
+                </span>
+                <div class="flex items-center gap-2 mt-1">
+                  <span class="text-sm line-through opacity-50">
+                    $120.00
+                  </span>
+                  <span class="discount-percent">
+                    save 20%
+                  </span>
+                </div>
+              </div>
+        
+              <span class="flex items-center mt-1">
+                <img src="../../assets/images/star.svg">
+                <img src="../../assets/images/star.svg">
+                <img src="../../assets/images/star.svg">
+                <img src="../../assets/images/star-half-fill.svg">
+                <img src="../../assets/images/star-no-fill.svg">
+                <span class="text-xs ml-2 text-gray-500">20K reviews</span>
+              </span>
+              <div class="mt-5 flex gap-2">
+                <button class="button-primary">Add to card</button>
+                <button class="button-icon">
+                  <img class="opacity-50" src="../../assets/images/love.svg" alt="Add to whishlist">
+                </button>
+                <button class="button-icon" routerLink="/product/details"  [state]="dat"><!-- (click)="navigate()" -->
+                  <img class="opacity-50" src="../../assets/images/eye.svg" alt="Add to whishlist">
+                </button>
+              </div>
+            </div>
+          </div>
+    </ng-container>
+    
+      <app-pagination [totalItems]="data.length" [pageSize]="pageSize" (pageChange)="onPageChange($event)"></app-pagination>
+    </div>
